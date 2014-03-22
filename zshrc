@@ -3,7 +3,7 @@ ZSH_THEME="amuse"
 DISABLE_AUTO_UPDATE="false"
 DISABLE_LS_COLORS="false"
 
-plugins=(git bundler brew gem rbates zsh-syntax-highlighting)
+plugins=(git bundler brew gem rbates zsh-syntax-highlighting cp)
 
 export PATH="/usr/local/bin:$PATH"
 export EDITOR='vi -w'
