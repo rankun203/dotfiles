@@ -1,0 +1,2 @@
+DEMO: http://daneden.github.io/animate.css/
+Github: https://github.com/daneden/animate.css
