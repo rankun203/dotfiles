@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+Name=Android Studio
+Icon=jetbrains-android-studio.png
+Path=/home/rankun203/utils/android-studio/bin
+Exec=/home/rankun203/utils/android-studio/bin/studio.sh
+StartupNotify=false
+StartupWMClass=jetbrains-android-studio
+OnlyShowIn=Unity;
+X-UnityGenerated=true
