@@ -1,0 +1,2 @@
+#!/bin/sh
+LD_PRELOAD=$HOME/git/dotfiles/extra/sublime-text/libsublime-imfix.so exec /opt/sublime_text/sublime_text "$@"
