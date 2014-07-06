@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cd ~/bin
+/home/rankun203/git/shadowsocks/bin/ssserver -c ./config.json
+

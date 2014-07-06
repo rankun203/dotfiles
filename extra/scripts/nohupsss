@@ -1,0 +1,3 @@
+#!/bin/sh
+
+nohup ssserver -c /home/rankun203/bin/config.json&
