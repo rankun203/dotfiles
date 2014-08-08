@@ -1,0 +1,3 @@
+#!/bin/bash
+
+/home/rankun203/.npm/shadowsocks/1.4.13/package/bin/sslocal

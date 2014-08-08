@@ -1,0 +1,8 @@
+#!/bin/sh
+isRun=`ps -C wiznote | grep wiznote`
+if $isRun
+then
+  wiznote 
+else
+  killall wiznote
+fi

@@ -1,0 +1,5 @@
+#!/bin/bash
+
+LANG=en_US
+/home/rankun203/utils/eagle-6.6.0/bin/eagle
+

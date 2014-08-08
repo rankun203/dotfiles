@@ -1,0 +1,3 @@
+#!/bin/sh
+cd /media/mindfine/Other/Windows7/
+optirun vmplayer Windows7.vmx

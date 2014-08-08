@@ -1,0 +1,25 @@
+#!/bin/bash
+
+#Backup text file incremental
+#append new command history to gist_file, but not just replace it.
+
+repo_uri="$HOME/git/gist_zsh_history"
+gist_file="history"
+to_backup_file="$HOME/.zsh_history"
+
+#check tail same
+ZSH_HISTORY=`tail -n 10 .zsh_history`
+GIST_HISTORY=`tail -n 10 $HOME/git/gist_zsh_history/history`
+
+if [[ "$ZSH_HISTORY" == "$GIST_HISTORY" ]]
+then
+  #if equals, no need to backup.
+  echo "No newer history."
+else
+  #if not equals, find $GIST_HISTORY in ZSH_HISTORY (find that 10 line), 
+  #  if found, the position of found last line is the last backup-ed position.
+  #    then just backup after that.
+  #  if not found, the whole $to_backup_file will be append to $gist_file.
+  
+  echo "not match"
+fi

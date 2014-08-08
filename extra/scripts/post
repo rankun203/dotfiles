@@ -1,0 +1,6 @@
+#!/bin/bash
+cd ~/git/rankun203.github.com/
+git add .
+git commit -am "自动提交文章"
+git push origin source
+rake gen_deploy

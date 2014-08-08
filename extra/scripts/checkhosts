@@ -1,0 +1,27 @@
+#!/bin/bash
+
+function success {
+	echo "isok $1 $2"
+	echo "$1	$2" >> ./hosts.ok
+}
+
+function fail {
+	echo "fail $1 $2"
+	echo "$1	$2" >> ./hosts.err
+}
+
+function fping {
+	echo "ping $1 $2"
+	ping -c2 "$1" &>/dev/null && success $1 $2 || fail $1 $2
+}
+
+echo "" > ./hosts.ok
+
+while IFS= read -r line; do
+	hasIp=$(echo "$line" | grep -Eo "^[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\s+.*")
+	if [ "$hasIp" != "" ]
+		then
+		fping $(echo "$line" | grep -Eo "[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}") $(echo "$line" | grep -Eo "\ *[a-zA-Z_0-9\.]+$")
+	fi
+
+done < "$1"
