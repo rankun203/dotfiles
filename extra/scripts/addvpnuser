@@ -1,0 +1,3 @@
+#!/bin/bash
+
+echo "$1  pptpd $2   *" >> /etc/ppp/chap-secrets
