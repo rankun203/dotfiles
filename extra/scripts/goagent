@@ -1,0 +1,3 @@
+#!/bin/bash
+
+python /home/rankun203/utils/goagent/local/goagent-gtk.py
