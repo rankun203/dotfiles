@@ -5,7 +5,7 @@ DISABLE_LS_COLORS="false"
 
 plugins=(git bundler brew gem rbates zsh-syntax-highlighting cp command-not-found)
 
-export PATH="/usr/local/bin:$PATH"
+export PATH="/usr/local/bin:$HOME/bin:$PATH"
 export EDITOR='vi -w'
 alias tom="java -jar $HOME/bin/webapp-runner.jar"
 
