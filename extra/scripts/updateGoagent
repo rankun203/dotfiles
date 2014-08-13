@@ -1,9 +1,0 @@
-#!/bin/bash
-
-gHome=/home/rankun203/git/goagent
-
-cd $gHome
-
-git pull
-http GET https://nodeload.github.com/goagent/goagent/legacy.zip/3.0 --download
-

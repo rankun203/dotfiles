@@ -1,0 +1,25 @@
+#!/bin/bash
+
+gHome=/home/rankun203/git/goagent
+hHome=/home/rankun203/html/files/imouto
+
+echo "...Updating Goagent under `echo $gHome`"
+
+cd $gHome
+
+git pull
+
+echo "...Checking goagent.zip"
+gName=`curl -I https://nodeload.github.com/goagent/goagent/legacy.zip/3.0 | grep -o "goagent-.*\.zip"`
+ls $gName
+if [ $? -ne 0 ];then
+  rm goagent-goagent*
+  http GET https://nodeload.github.com/goagent/goagent/legacy.zip/3.0 --download
+else
+  echo "...goagent.zip up to date."
+fi
+
+echo "...Updating hosts file under `echo $hHome`"
+cd $hHome
+
+git pull
