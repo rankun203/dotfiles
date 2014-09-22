@@ -4,5 +4,6 @@ cd /home/rankun203/www/file/
 inotifywait -r -m ./ -e create -e moved_to -e modify | 
   while read path action file; do
     echo "The file '$file' appeared in directory '$path' via '$action'"
-    rsync -Ravzrhu --update --progress --chmod=u+rwx,g+rx,o+rx "$path$file" rankun203@rankun.org:/home/rankun203/html/files
+    rsync -Ravztrhu --update --progress --chmod=u+rwx,g+rx,o+rx "$path$file" rankun203@rankun.org:/home/rankun203/html/files
   done
+

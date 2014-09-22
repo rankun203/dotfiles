@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+
+ssh -p 9999 root@rankun.org "tail -f /usr/share/tomcat/logs/catalina.out"
+
