@@ -8,7 +8,8 @@ http.createServer (req, res) ->
   res.writeHead 200, {'Content-Type': 'text/plain'}
   url_parts = url.parse req.url, true
   ip = url_parts.query.ip  
-  if ip && -1 != ip.search '192.168.2.'
+  if ip && /^192.168.2.\d\d$/.test ip
+    console.log Date() + ' - ip:'  + ip
     exec "sed -i \"s/192.168.2.* colnect/#{ip} colnect/g\" /etc/hosts", (rtn) ->
       res.write rtn + '\n'
       printColnect(res)
