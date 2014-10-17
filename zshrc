@@ -7,7 +7,12 @@ plugins=(git bundler brew gem rbates zsh-syntax-highlighting cp command-not-foun
 
 export GOROOT="$HOME/utils/go"
 export GOPATH="$HOME/git/go"
-export PATH="/usr/local/bin:$GOROOT/bin:$HOME/bin:$PATH"
+
+export M2_HOME="/home/rankun203/utils/apache-maven/"
+export TOMCAT_HOME="/home/rankun203/utils/apache-tomcat"
+
+export PATH="/usr/local/bin:$GOROOT/bin:$HOME/bin:$M2_HOME/bin:$PATH"
+
 export EDITOR='vi -w'
 alias tom="java -jar $HOME/bin/webapp-runner.jar"
 

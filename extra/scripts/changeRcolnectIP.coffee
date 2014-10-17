@@ -12,7 +12,9 @@ http.createServer (req, res) ->
     console.log Date() + ' - ip:'  + ip
     exec "sed -i \"s/192.168.2.* colnect/#{ip} colnect/g\" /etc/hosts", (rtn) ->
       res.write rtn + '\n'
-      printColnect(res)
+      exec "service nginx restart", (rtn) ->
+        res.write rtn + '\n'
+        printColnect(res)
   else
     printColnect(res)
 .listen 1133, '0.0.0.0'
