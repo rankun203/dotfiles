@@ -29,7 +29,7 @@ if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
 endif
 
 " Switch wrap off for everything
-set nowrap
+set wrap
 
 " Only do this part when compiled with support for autocommands.
 if has("autocmd")
@@ -65,9 +65,9 @@ if has("autocmd")
 
   augroup END
 
-else
+"else
 
-  set autoindent		" always set autoindenting on
+  "set autoindent		" always set autoindenting on
 
 endif " has("autocmd")
 
