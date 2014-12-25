@@ -249,3 +249,4 @@ function! OpenURL()
 endfunction
 map <Leader>w :call OpenURL()<CR>
 
+Bundle 'wakatime/vim-wakatime'
