@@ -1,0 +1,10 @@
+{
+    "server":"106.185.32.207",
+    "server_port":993,
+    "local_address":"127.0.0.1",
+    "local_port":8088,
+    "password":"friendss",
+    "timeout":600,
+    "method":"aes-256-cfb"
+}
+

@@ -1,5 +1,3 @@
 #!/bin/bash
 
-cd ~/bin
-/home/rankun203/git/shadowsocks/bin/ssserver -c ./config.json
-
+sudo ssserver -c /home/rankun203/git/dotfiles/conf/config.json
