@@ -3,6 +3,8 @@ ZSH_THEME="amuse"
 DISABLE_AUTO_UPDATE="false"
 DISABLE_LS_COLORS="false"
 
+SD="/storage/sdcard0"
+
 plugins=(git bundler brew gem rbates zsh-syntax-highlighting cp command-not-found)
 
 export PATH="/usr/local/bin:$HOME/bin:/usr/local/sbin:$PATH"
@@ -10,6 +12,7 @@ export EDITOR='vim -w'
 export ANDROID='/Applications/android-sdk-macosx'
 export ANDROID_HOME=$ANDROID
 alias tom="java -jar $HOME/bin/webapp-runner.jar"
+alias node="node --harmony"
 
 export DOCKER_TLS_VERIFY=1
 export DOCKER_HOST=tcp://192.168.59.103:2376

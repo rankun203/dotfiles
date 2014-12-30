@@ -125,11 +125,15 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>876 185 445 270 0 0 1440 878 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>375 329 924 485 0 0 1440 878 </string>
+	<string>375 328 924 485 0 0 1440 877 </string>
+	<key>NSWindow Frame SUStatusFrame</key>
+	<string>84 590 384 129 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>855 423 570 351 0 0 1440 878 </string>
+	<string>610 506 585 351 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>855 423 570 351 0 0 1440 878 </string>
+	<string>302 71 1187 806 0 0 1440 877 </string>
+	<key>NSWindow Frame iTerm Window 2</key>
+	<string>853 526 585 351 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -702,7 +706,7 @@
 			<key>Screen</key>
 			<integer>-1</integer>
 			<key>Scrollback Lines</key>
-			<integer>1000</integer>
+			<integer>9999</integer>
 			<key>Scrollback With Status Bar</key>
 			<false/>
 			<key>Scrollback in Alternate Screen</key>
@@ -927,7 +931,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2014-10-29T12:10:42Z</date>
+	<date>2014-12-29T07:39:49Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -969,6 +973,6 @@
 	<key>WordCharacters</key>
 	<string>/-+\~_.</string>
 	<key>iTerm Version</key>
-	<string>2.0.0.20141022</string>
+	<string>2.0.0.20141103</string>
 </dict>
 </plist>
