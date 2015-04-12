@@ -1,3 +1,0 @@
-#!/bin/sh
-sudo ${HOME}/utils/hostapd-python-script-master/hostapd.py start
-

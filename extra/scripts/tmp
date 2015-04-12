@@ -1,4 +1,0 @@
-#!/bin/bash
-tpr="* * * * hahahhaa"
-echo -e $tpr
-

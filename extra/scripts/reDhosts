@@ -1,3 +1,0 @@
-#!/usr/bin/env sh
-
-wget -O /home/rankun203/html/files/hosts https://projecth.us/sources/9/35/hosts

@@ -1,2 +1,10 @@
+<<<<<<< HEAD
 vim/.netrwhist
 vim/.VimballRecord
+=======
+.release-notes.txt
+.ruby-version
+command-t.recipe
+/.bundle
+vendor/bundle
+>>>>>>> d9741423d8f34e5c89aa8e01c051b0ba2298e286

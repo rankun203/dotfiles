@@ -1,8 +1,0 @@
-#!/bin/sh
-isRun=`ps -C stardict | grep stardict`
-if $isRun
-then
-  stardict
-else
-  killall stardict
-fi

@@ -1,3 +1,0 @@
-#!/bin/bash
-
-sudo ssserver -c /home/rankun203/git/dotfiles/conf/config.json
