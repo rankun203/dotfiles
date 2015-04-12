@@ -15,9 +15,9 @@ alias tom="java -jar $HOME/bin/webapp-runner.jar"
 alias bfg="java -jar /Users/rankun203/tools/bfg.jar"
 
 
-export DOCKER_TLS_VERIFY=1
-export DOCKER_HOST=tcp://192.168.59.103:2376
-export DOCKER_CERT_PATH=/Users/rankun203/.boot2docker/certs/boot2docker-vm
+# export DOCKER_TLS_VERIFY=1
+# export DOCKER_HOST=tcp://192.168.59.103:2376
+# export DOCKER_CERT_PATH=/Users/rankun203/.boot2docker/certs/boot2docker-vm
 
 
 
@@ -34,6 +34,8 @@ export NODE_PATH="/usr/local/lib/node_modules"
 
 PATH=$PATH:$ANDROID/platform-tools:$ANDROID/tools:$UBIN:$M2_HOME/bin:$HOME/.rvm/bin:$MYSQL_HOME/bin # Add RVM to PATH for scripting
 
-
 export NVM_DIR="/Users/rankun203/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+# alias
+
